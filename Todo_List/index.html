@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive To-Do App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>To-Do List Web App</h1>
+    <form id="task-form">
+      <input type="text" id="task-title" placeholder="Title" required>
+      <textarea id="task-desc" placeholder="Description" required></textarea>
+      <button type="submit" class="save-btn">Add</button>
+    </form>
+
+    <h2>Pending Tasks</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Description</th>
+          <th>Added On</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="pending-tasks">
+      </tbody>
+    </table>
+
+    <h2>Completed Tasks</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Description</th>
+          <th>Completed On</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="completed-tasks">
+      </tbody>
+    </table>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
